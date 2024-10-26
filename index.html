@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In All Seriousness</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libre+Baskerville:wght@700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
+</head>
+
+<body class="bg-yellow-400 flex items-center justify-center min-h-screen text-center relative">
+
+    <div id="microphoneHeroImageContainer" class="absolute top-0 z-10 mb-10">
+        <img id="microphoneHeroImage" src="/public/images/mic3.png" alt="Microphone"
+            class="rotate-180 h-auto w-24 md:w-28">
+    </div>
+
+
+
+    <!-- Main container -->
+    <div class="relative w-full max-w-lg lg:max-w-3xl mx-auto lg:p-8 p-4 rounded-lg bg-yellow-400 shadow-2xl">
+        <!-- Narrative Text -->
+        <span
+            class="hidden md:inline absolute left-20 top-20 md:left-52 text-lg md:text-xl font-bold narrative-text">The
+            Story..</span>
+        <span
+            class="hidden md:inline absolute right-20 top-20 md:right-56 text-lg md:text-xl font-bold narrative-text">..As
+            Told</span>
+
+        <!-- Top Links -->
+        <div class="absolute top-4 left-4">
+            <a href="#" target="_blank" class="text-black font-bold">
+                <i class="fab fa-spotify text-4xl"></i>
+            </a>
+        </div>
+        <div class="absolute top-4 right-4">
+            <a href="#" target="_blank" class="text-black font-bold">
+                <i class="fab fa-youtube text-4xl"></i>
+            </a>
+        </div>
+
+        <!-- Podcast Title and Episode Info -->
+        <div class="text-black px-6 py-8 rounded-lg bg-transparent min-h-">
+            <img src="/" alt="placeholder" class="mx-auto w-24 h-24 mb-4 opacity-0">
+            <h1 class="text-3xl md:text-5xl font-bold hero-text">IN ALL SERIOUSNESS
+            </h1>
+
+            <p class="text-lg mt-2">Hosted by: Sarah Angela & Branden Lee</p>
+            <p class="text-sm mt-4">Episode 1 - Branden Lee 'The Why'</p>
+            <!-- Play button placeholder -->
+            <div
+                class="relative flex justify-between mx-4 md:mx-8 my-6 px-4 md:px-8 rounded-full bg-white border border-gray-300 group">
+                <!-- Buttons -->
+                <button class="text-black text-xl"><i class="fa-solid fa-repeat"></i></button>
+                <button class="text-black text-xl"><i class="fa-solid fa-backward"></i></button>
+                <button class="bg-yellow-400 text-black text-xl px-4 py-2 m-1 rounded-full">▶</button>
+                <button class="text-black text-xl"><i class="fa-solid fa-forward"></i></button>
+                <button class="text-black text-xl"><i class="fa-solid fa-shuffle"></i></button>
+
+                <!-- Hover Overlay for "Coming Soon" -->
+                <div
+                    class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-75 text-white text-lg font-bold opacity-0 hover:opacity-100 rounded-full">
+                    Coming Soon
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Links -->
+        <div class="absolute bottom-4 left-4">
+            <button onclick="openModal('episodeListModal')" class="text-black font-bold">
+                <i class="fa-solid fa-layer-group text-4xl"></i>
+            </button>
+        </div>
+        <div class="absolute bottom-4 right-4">
+            <button onclick="openModal('contactModal')" class="bg-black text-white px-3 py-1 rounded-full">
+                Contact
+            </button>
+        </div>
+
+    </div>
+
+    <!-- Episode List Modal -->
+    <div id="episodeListModal" class="fixed inset-0 bg-black bg-opacity-50 hidden flex items-center justify-center">
+        <div class="bg-white p-6 rounded-lg max-w-sm mx-auto">
+            <h2 class="text-2xl font-bold mb-4">Episode List</h2>
+            <!-- Episode list content here -->
+            Here a list of episodes will be inserted.
+            <button onclick="closeModal('episodeListModal')" class="mt-4 bg-yellow-500 px-4 py-2 rounded-full">
+                Close
+            </button>
+        </div>
+    </div>
+
+    <!-- Contact Modal -->
+    <div id="contactModal"
+        class="fixed inset-0 bg-black bg-opacity-50 pt-10 hidden flex items-center justify-center z-10">
+        <div class="bg-white p-6 rounded-lg max-w-sm mx-auto z-20">
+            <h2 class="text-2xl font-bold mb-6 mt-12">Contact Us</h2>
+            <form action="mailto:afakeemail@gmail.com" method="post" enctype="text/plain">
+                <input type="text" name="name" placeholder="Your Name"
+                    class="w-full mb-3 p-2 border border-gray-300 rounded">
+                <input type="email" name="email" placeholder="Your Email"
+                    class="w-full mb-3 p-2 border border-gray-300 rounded">
+                <textarea name="message" placeholder="Your Message"
+                    class="w-full mb-6 p-2 border border-gray-300 rounded"></textarea>
+
+                <!-- Button Row -->
+                <div class="flex justify-between space-x-4">
+                    <button type="button" onclick="closeModal('contactModal')"
+                        class="bg-gray-500 text-white px-4 py-2 rounded-full">Close</button>
+                    <button type="submit" class="bg-yellow-500 px-4 py-2 rounded-full">Send</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>
