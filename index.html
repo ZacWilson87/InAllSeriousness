@@ -17,8 +17,7 @@
 <body class="bg-yellow-400 flex items-center justify-center min-h-screen text-center relative">
 
     <div id="microphoneHeroImageContainer" class="absolute top-0 z-10 mb-10">
-        <img id="microphoneHeroImage" src="./public/images/mic3.png" alt="Microphone"
-            class="rotate-180 h-auto w-24 md:w-28">
+        <img id="microphoneHeroImage" src="images/mic3.png" alt="Microphone" class="rotate-180 h-auto w-24 md:w-28">
     </div>
 
 
@@ -35,15 +34,18 @@
 
         <!-- Top Links -->
         <div class="absolute top-4 left-4">
-            <a href="#" target="_blank" class="text-black font-bold">
+            <a href="#" target="_blank"
+                class="text-black font-bold hover:text-green-600 hover:scale-110 transition duration-200">
                 <i class="fab fa-spotify text-4xl"></i>
             </a>
         </div>
         <div class="absolute top-4 right-4">
-            <a href="#" target="_blank" class="text-black font-bold">
+            <a href="#" target="_blank"
+                class="text-black font-bold hover:text-red-600 hover:scale-110 transition duration-200">
                 <i class="fab fa-youtube text-4xl"></i>
             </a>
         </div>
+
 
         <!-- Podcast Title and Episode Info -->
         <div class="text-black px-6 py-8 rounded-lg bg-transparent min-h-">
@@ -73,15 +75,18 @@
 
         <!-- Bottom Links -->
         <div class="absolute bottom-4 left-4">
-            <button onclick="openModal('episodeListModal')" class="text-black font-bold">
+            <button onclick="openModal('episodeListModal')"
+                class="text-black font-bold hover:text-yellow-600 hover:scale-110 transition duration-200">
                 <i class="fa-solid fa-layer-group text-4xl"></i>
             </button>
         </div>
         <div class="absolute bottom-4 right-4">
-            <button onclick="openModal('contactModal')" class="bg-black text-white px-3 py-1 rounded-full">
+            <button onclick="openModal('contactModal')"
+                class="bg-black text-white px-3 py-1 rounded-full hover:bg-gray-800 hover:scale-105 transition duration-200">
                 Contact
             </button>
         </div>
+
 
     </div>
 
