@@ -14,3 +14,7 @@ body {
 .hero-text {
     font-family: 'Bebas Neue', sans-serif;
 }
+
+#microphoneHeroImage {
+    height: 37vh;
+}

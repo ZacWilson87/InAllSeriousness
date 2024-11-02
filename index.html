@@ -14,10 +14,10 @@
     <script src="main.js" defer></script>
 </head>
 
-<body class="bg-yellow-400 flex items-center justify-center min-h-screen text-center relative">
+<body class="bg-yellow-400 flex items-center justify-center h-screen text-center relative">
 
     <div id="microphoneHeroImageContainer" class="absolute top-0 z-10 mb-10">
-        <img id="microphoneHeroImage" src="images/mic3.png" alt="Microphone" class="rotate-180 h-auto w-24 md:w-28">
+        <img id="microphoneHeroImage" src="images/mic3.png" alt="Microphone" class=" w-auto">
     </div>
 
 
@@ -26,10 +26,10 @@
     <div class="relative w-full max-w-lg lg:max-w-3xl mx-auto lg:p-8 p-4 rounded-lg bg-yellow-400 shadow-2xl">
         <!-- Narrative Text -->
         <span
-            class="hidden md:inline absolute left-20 top-20 md:left-52 text-lg md:text-xl font-bold narrative-text">The
+            class="hidden lg:inline absolute left-20 top-20 md:left-52 text-lg md:text-xl font-bold narrative-text">The
             Story..</span>
         <span
-            class="hidden md:inline absolute right-20 top-20 md:right-56 text-lg md:text-xl font-bold narrative-text">..As
+            class="hidden lg:inline absolute right-20 top-20 md:right-56 text-lg md:text-xl font-bold narrative-text">..As
             Told</span>
 
         <!-- Top Links -->
@@ -59,11 +59,11 @@
             <div
                 class="relative flex justify-between mx-4 md:mx-8 my-6 px-4 md:px-8 rounded-full bg-white border border-gray-300 group">
                 <!-- Buttons -->
-                <button class="text-black text-xl"><i class="fa-solid fa-repeat"></i></button>
                 <button class="text-black text-xl"><i class="fa-solid fa-backward"></i></button>
+                <button class="text-black text-xl"><i class="fa-solid fa-backward-step"></i></button>
                 <button class="bg-yellow-400 text-black text-xl px-4 py-2 m-1 rounded-full">▶</button>
+                <button class="text-black text-xl"><i class="fa-solid fa-forward-step"></i></button>
                 <button class="text-black text-xl"><i class="fa-solid fa-forward"></i></button>
-                <button class="text-black text-xl"><i class="fa-solid fa-shuffle"></i></button>
 
                 <!-- Hover Overlay for "Coming Soon" -->
                 <div
